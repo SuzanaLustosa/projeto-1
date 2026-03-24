@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    transition: 0.3s;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    padding: 15px 20px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar h1 {
+    font-size: clamp(1rem, 4vw, 1.5rem);
+}
+
+.navbar button {
+    padding: 8px 15px;
+    cursor: pointer;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    font-size: clamp(0.75rem, 3vw, 1rem);
+    white-space: nowrap;
+}
+
+/* CONTAINER */
+.container {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* CARD */
+.card {
+    width: 100%;
+    max-width: 500px;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin-bottom: 30px;
+    color: gray;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    padding: 10px;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* DARK MODE */
+.dark {
+    background-color: #121212;
+    color: white;
+}
+
+.dark .navbar {
+    background-color: #1e1e1e;
+}
+
+.dark .card {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.dark input {
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+    .card {
+        padding: 25px 20px;
+    }
+
+    .navbar {
+        padding: 12px 15px;
+    }
+}
