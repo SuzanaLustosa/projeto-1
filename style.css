@@ -51,7 +51,7 @@ body {
     max-width: 500px;
     padding: 40px;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 40px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     text-align: center;
 }
